@@ -653,118 +653,13 @@
             </div>
 
 
-           <form
-    class="contact-form"
-    id="contactForm"
-    action="https://api.web3forms.com/submit"
-    method="POST"
->
-
-    <input
-        type="hidden"
-        name="access_key"
-        value="7a8eccb4-c7f0-4fb3-999e-b523a4a2b145"
-    >
-
-    <input
-        type="hidden"
-        name="subject"
-        value="New Nash Academy Inquiry"
-    >
-
-    <input
-        type="hidden"
-        name="from_name"
-        value="Nash Academy Website"
-    >
-
-    <div class="form-row">
-                    <div class="input-group">
-                        <label for="name">YOUR NAME</label>
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            placeholder="Enter your name"
-                            required
-                        >
-                    </div>
-
-                    <div class="input-group">
-                        <label for="phone">PHONE NUMBER</label>
-                        <input
-                            type="tel"
-                            id="phone"
-                            name="phone"
-                            placeholder="+91"
-                            required
-                        >
-                    </div>
-
-                </div>
-
-
-                <div class="input-group">
-                    <label for="email">EMAIL ADDRESS</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="you@example.com"
-                        required
-                    >
-                </div>
-
-
-                <div class="input-group">
-
-                    <label for="program">INTERESTED PROGRAM</label>
-
-                    <select id="program" name="program">
-
-                        <option value="">
-                            Select a program
-                        </option>
-
-                        <option value="foundation">
-                            Foundation — Age 6-9
-                        </option>
-
-                        <option value="development">
-                            Development — Age 10-14
-                        </option>
-
-                        <option value="performance">
-                            Performance — Age 15-18
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <div class="input-group">
-
-                    <label for="message">MESSAGE</label>
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="4"
-                        placeholder="Tell us how we can help..."
-                    ></textarea>
-
-                </div>
-
-
-                <button type="submit" class="submit-btn">
-                    SEND ENQUIRY
-                    <span>↗</span>
-                </button>
-
-                <p class="form-message" id="formMessage"></p>
-
-            </form>
+          <form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="7a8eccb4-c7f0-4fb3-999e-b523a4a2b145">
+  <input type="text" name="name" required>
+  <input type="email" name="email" required>
+  <textarea name="message" required></textarea>
+  <button type="submit">Submit Form</button>
+</form>
 
         </section>
 
